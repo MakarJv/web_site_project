@@ -1,0 +1,66 @@
+.actionsMenu {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    border-radius: 50%;
+    background: var(--clr-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.darkMode .actionsMenu {
+    background: var(--clr-darken-gray);
+}
+
+.actionsMenu .dark {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1;
+    transition: 0.5s;
+}
+
+.darkMode .actionsMenu .dark {
+    scale: 0;
+}
+
+.actionsMenu .dark ion-icon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: var(--clr-darken-gray);
+}
+
+.actionsMenu .white {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0;
+    transition: 0.5s;
+}
+
+.darkMode .actionsMenu .white {
+    scale: 1;
+}
+
+.actionsMenu .white ion-icon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: var(--clr-white);
+}

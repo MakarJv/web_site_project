@@ -1,0 +1,125 @@
+.userProfile {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userProfile .cardProfile {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 0.9;
+    background: var(--clr-white);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7),
+    inset 1px 2px 3px rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+}
+
+.darkMode .userProfile .cardProfile {
+    background: var(--clr-darken-gray);
+    opacity: 0.8;
+}
+
+.userProfile .cardProfile .imgProfile {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: inherit;
+    border-radius: 50%;
+}
+
+.userProfile .cardProfile .imgProfile ion-icon {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    color: var(--clr-darken-gray);
+}
+
+.darkMode .userProfile .cardProfile .imgProfile ion-icon {
+    color: var(--clr-white);
+}
+
+.userProfile .cardProfile .aboutUser {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.userProfile .cardProfile .aboutUser ul {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 5px;
+    list-style: none;
+}
+
+.userProfile .cardProfile .aboutUser ul li {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: solid 1px var(--clr-black);
+}
+
+.darkMode .userProfile .cardProfile .aboutUser ul li {
+    border-bottom: solid 1px var(--clr-white);
+}
+
+.userProfile .cardProfile .aboutUser ul li p {
+    position: relative;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: -apple-system, sans-serif;
+    color: var(--clr-black);
+}
+
+.darkMode .userProfile .cardProfile .aboutUser ul li p {
+    color: var(--clr-white);
+}
+
+.userProfile .cardProfile .aboutUser ul li span {
+    position: relative;
+    font-size: 1.1em;
+    color: var(--clr-black);
+}
+
+.darkMode .userProfile .cardProfile .aboutUser ul li span {
+    color: var(--clr-white);
+}
+
+@media (max-width: 400px) {
+    .userProfile .cardProfile {
+        width: 350px;
+        height: auto;
+        margin-top: 35px;
+    }
+}
+
+@media (max-height: 700px) {
+    .userProfile .cardProfile {
+        width: auto;
+        height: auto;
+    }
+}

@@ -1,0 +1,41 @@
+:root {
+    --clr-white: #fff;
+    --clr-black: #000;
+    --clr-gray: #524e52;
+    --clr-darken-gray: #2f363e;
+    --clr-crema: #ffffdd;
+    --clr-red: #f00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+
+body.lightTheme {
+    background: var(--clr-white);
+}
+
+body.darkMode {
+    background: var(--clr-darken-gray);
+}
+
+.app {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(/src/img/hand.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
