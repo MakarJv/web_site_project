@@ -28,8 +28,8 @@ body.darkMode {
 }
 
 .app {
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 90vw;
+    min-height: 90vh;
     background-image: url(/src/img/hand.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -38,4 +38,7 @@ body.darkMode {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

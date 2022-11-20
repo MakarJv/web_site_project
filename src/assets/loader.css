@@ -7,6 +7,7 @@
     justify-content: center;
     visibility: hidden;
     scale: 0;
+    z-index: 2000;
 }
 
 .preloader .loader {
@@ -18,7 +19,7 @@
     position: relative;
     width: 50px;
     height: 50px;
-    color: var(--clr-white);
+    color: var(--clr-black);
     animation: loader 0.6s infinite;
 }
 

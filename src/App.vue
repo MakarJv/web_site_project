@@ -20,7 +20,7 @@ export default {
       window.setTimeout(function () {
         document.body.classList.add('preloader')
         document.body.classList.remove('preloader')
-      }, 500)
+      }, 1000)
     }
   },
   components: {

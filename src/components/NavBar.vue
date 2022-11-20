@@ -9,15 +9,21 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a href="/">
-            <ion-icon name="home-outline"></ion-icon>
-            Home</a></li>
+          <li>
+            <router-link to="/" class="link">
+              <ion-icon name="home-outline"></ion-icon>
+              Home
+            </router-link>
+          </li>
           <li><a href="#">
             <ion-icon name="camera-outline"></ion-icon>
             Photos</a></li>
-          <li><a href="#">
-            <ion-icon name="chatbubble-outline"></ion-icon>
-            Messages</a></li>
+          <li>
+            <router-link to="/messages" class="link">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+              Messages
+            </router-link>
+          </li>
           <li><a href="#">
             <ion-icon name="settings-outline"></ion-icon>
             Setting</a></li>
@@ -28,7 +34,9 @@
       <ion-icon name="caret-down-outline"></ion-icon>
       <div class="dropdownMenu">
         <ul>
-          <li><a href="/profile">Profile</a></li>
+          <li>
+            <router-link to="/profile">Profile</router-link>
+          </li>
           <li><a href="#">Login</a></li>
         </ul>
       </div>
@@ -47,6 +55,7 @@ export default {
     let maskContent = document.querySelector('.maskContent')
     let dropdown = document.querySelector('.dropdown')
     let maskDropdown = document.querySelector('.maskDropdown')
+    let link = document.querySelector('.link')
 
     openMenu.onclick = function () {
       group.classList.add('open')
@@ -70,6 +79,11 @@ export default {
     maskDropdown.onclick = function () {
       dropdown.classList.remove('openDropdown')
       maskDropdown.classList.remove('openDropdown')
+    }
+    link.onclick = function () {
+      group.classList.remove('open')
+      openMenu.classList.remove('open')
+      maskContent.classList.remove('open')
     }
   }
 }

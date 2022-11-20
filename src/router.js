@@ -10,6 +10,11 @@ const routes = [
     path: '/profile',
     name: 'profile',
     component: () => import('./views/UserProfile')
+  },
+  {
+    path: '/messages',
+    name: 'messages',
+    component: () => import('./views/TheMessages')
   }
 ]
 const router = createRouter({
